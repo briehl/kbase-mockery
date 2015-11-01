@@ -53,14 +53,13 @@ for (var i=2; i<process.argv.length; i++) {
     stubbyConfig = stubbyConfig.concat(mockConfigParser.parseFile(process.argv[i]));
 }
 
-
+// add in all requests from files.
 var stubConfig = {
     stubs: cfg.STUBBY_PORT,
     admin: cfg.STUBBY_ADMIN_PORT,
     location: 'localhost',
     data: stubbyConfig
 };
-// add in all requests from files.
 KBaseStubby.startStubby(stubConfig);
 var server = new MockServer(cfg);
 server.start();
