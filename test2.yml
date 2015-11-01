@@ -1,0 +1,18 @@
+main-url: /services/ws
+service-name: Narrative
+endpoints:
+- request:
+    service-method: ver
+    post: ''
+  response:
+      headers:
+        content-type: application/json
+      status: 200
+      body: Successful Narrative request!
+- request:
+    service-method: ver
+    method: GET
+  response:
+      headers:
+        content-type: application/json
+      body: YOU MADE A GET REQUEST!
