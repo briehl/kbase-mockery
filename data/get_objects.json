@@ -1,0 +1,6 @@
+{
+    "i": "am",
+    "an": "object",
+    "with": ["an", "array"],
+    "and": { "a": "map" }
+}
