@@ -26,3 +26,9 @@ curl -d '{"method":"Workspace.ver", "version":"1.1", "id":"12345", "params":[]}'
 
 ##Tweaking it
 `deploy.cfg` in the root has the port endpoints. 
+
+##To Do
+* Handle auth headers for calls that require them.
+* Format responses the way KBase calls get formatted.
+* Format errors as expected.
+* Autogenerate some calls (or build the skeleton of a Stubby YAML) based on KIDL typespecs.
