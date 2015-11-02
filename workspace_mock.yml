@@ -12,6 +12,7 @@ endpoints:
 - request:
     service-method: get_objects
     post: \[\{\"ref\":\"1\/2\/3\"}]
+    # post: [{"ref":"1/2/3"}]
   response:
     headers:
       content-type: application/json
